@@ -222,3 +222,27 @@ body {
     font-style: italic;
     color: #e0e0e0;
 }
+
+.skills-grid {
+    display: flex;
+    gap: 40px;
+}
+
+.skills-grid ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-grid li {
+    margin-bottom: 10px;
+    padding-left: 15px;
+    position: relative;
+    font-size: 1.5rem;
+}
+
+.skills-grid li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: white;
+}
