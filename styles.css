@@ -369,3 +369,40 @@ body {
     color: rgba(255, 255, 255, 0.8);
 }
 
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-item {
+    text-decoration: none;
+    display: block;
+    padding: 15px 25px;
+    border: 2px solid rgba(200, 134, 255, 0.3);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.contact-item .contact-label {
+    color: #ffdf00; 
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.contact-item .contact-value {
+    color: white;
+}
+
+.contact-item:active, .contact-item.clicked {
+    background: var(--primary-teal);
+    transform: scale(0.98);
+}
+
+.contact-item:active .contact-label, 
+.contact-item:active .contact-value,
+.contact-item.clicked .contact-label,
+.contact-item.clicked .contact-value {
+    color: #1a1a1a;
+}
