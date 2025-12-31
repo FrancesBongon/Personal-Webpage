@@ -35,3 +35,10 @@ window.addEventListener('load', () => {
         showSection('home');
     }
 });
+
+document.querySelectorAll('.contact-item').forEach(item => {
+    item.addEventListener('click', function() {
+        document.querySelectorAll('.contact-item').forEach(i => i.classList.remove('clicked'));
+        this.classList.add('clicked');
+    });
+});
