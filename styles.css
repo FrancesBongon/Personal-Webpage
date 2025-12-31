@@ -246,3 +246,23 @@ body {
     left: 0;
     color: white;
 }
+
+.software-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.icon-row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icon-row img {
+    height: 50px;
+    filter: drop-shadow(0 0 5px rgba(255,255,255,0.2));
+}
+
+.big-icons img { height: 60px; }
