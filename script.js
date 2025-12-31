@@ -1,20 +1,34 @@
 function showSection(targetId) {
-    document.querySelectorAll('.page-section').forEach(section => {
+    dconst sections = document.querySelectorAll('.page-section');
+    const navLinks = document.querySelectorAll('.nav-links a');
+
+    // 1. Remove active class from all sections
+    sections.forEach(section => {
         section.classList.remove('active');
+        // Briefly hide from display to reset the animation state
+        section.style.display = 'none'; 
     });
 
+    // 2. Prepare the target section
     const targetSection = document.getElementById(targetId);
     if (targetSection) {
-        targetSection.classList.add('active');
+        targetSection.style.display = 'flex'; // Set display first
+        
+        // Use a tiny timeout so the browser registers the display change 
+        // before applying the opacity/transform animation
+        setTimeout(() => {
+            targetSection.classList.add('active');
+        }, 10);
     }
 
-    document.querySelectorAll('.nav-links a').forEach(navLink => {
+    // 3. Update Nav Links
+    navLinks.forEach(navLink => {
         navLink.classList.remove('active');
         if (navLink.getAttribute('data-target') === targetId) {
             navLink.classList.add('active');
         }
     });
-
+    
     window.location.hash = targetId;
 }
 
