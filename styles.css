@@ -287,3 +287,29 @@ body {
     z-index: -1; 
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
+
+.projects-main-container {
+    height: 80vh; 
+    width: 90%;
+    padding: 30px;
+    overflow: hidden; 
+}
+
+.projects-scroll-area {
+    height: 100%;
+    overflow-y: scroll; 
+    padding-right: 25px;
+}
+
+.projects-scroll-area::-webkit-scrollbar { width: 14px; }
+.projects-scroll-area::-webkit-scrollbar-track {
+    background: rgba(200, 134, 255, 0.3);
+    border-radius: 20px;
+}
+.projects-scroll-area::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 20px;
+    border: 3px solid transparent;
+    background-clip: content-box;
+}
+
