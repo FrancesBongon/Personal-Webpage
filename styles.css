@@ -266,3 +266,24 @@ body {
 }
 
 .big-icons img { height: 60px; }
+
+.expertise-content {
+    position: relative; 
+    padding: 40px;
+    z-index: 1; 
+}
+
+.expertise-content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05); 
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(200, 134, 255, 0.3);
+    border-radius: 40px;
+    z-index: -1; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
