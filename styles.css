@@ -104,3 +104,40 @@ body {
 .page-section.active {
     display: flex;
 }
+
+.home-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    max-width: 1300px;
+    margin: 0 auto;
+    height: 80vh;
+}
+
+.home-text {
+    flex: 1.2; /* Takes up more space on the left */
+    z-index: 2;
+}
+
+.main-title {
+    font-size: 5.5rem; /* Massive heading to fill space */
+    margin: 5px 0;
+    line-height: 0.9;
+    font-weight: 900;
+}
+
+.role {
+    color: #ffdf00;
+    font-size: 2.2rem;
+    letter-spacing: 5px;
+    margin-bottom: 25px;
+}
+
+.description {
+    font-size: 1.4rem;
+    max-width: 550px;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.6;
+}
