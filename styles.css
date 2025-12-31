@@ -406,3 +406,28 @@ body {
 .contact-item.clicked .contact-value {
     color: #1a1a1a;
 }
+
+.contact-visual {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.tilted-box-contact {
+    padding: 60px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 2px solid var(--accent-purple);
+    border-radius: 40px;
+    transform: rotate(-5deg); 
+    text-align: center;
+}
+
+.visual-logo {
+    font-family: 'Sofia', cursive;
+    font-size: 4rem;
+    margin: 0;
+    color: var(--primary-teal);
+    text-shadow: 0 0 20px rgba(0, 242, 234, 0.5);
+}
