@@ -17,3 +17,11 @@ function showSection(targetId) {
 
     window.location.hash = targetId;
 }
+
+document.querySelectorAll('.nav-item').forEach(link => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('data-target');
+        showSection(targetId);
+    });
+});
