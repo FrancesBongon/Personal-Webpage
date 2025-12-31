@@ -25,3 +25,13 @@ document.querySelectorAll('.nav-item').forEach(link => {
         showSection(targetId);
     });
 });
+
+window.addEventListener('load', () => {
+    const currentHash = window.location.hash.replace('#', '');
+    
+    if (currentHash) {
+        showSection(currentHash);
+    } else {
+        showSection('home');
+    }
+});
